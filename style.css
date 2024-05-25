@@ -1,0 +1,146 @@
+:root {
+  --clr-ornge: hsl(31, 77%, 52%);
+  --clr-cyan: hsl(184, 100%, 22%);
+  --clr-dcyan: hsl(179, 100%, 13%);
+
+  --ntrl-300: hsla(0, 0%, 100%, 0.75);
+  --ntrl-100: hsl(0, 0%, 95%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Lexend Deca;
+}
+
+.wrapper {
+  max-width: 250px;
+  background-color: green;
+  border-radius: 8px;
+  overflow: hidden;
+}
+article {
+  padding: 2rem;
+}
+.orange {
+  background-color: var(--clr-ornge);
+}
+.cyan {
+  background-color: var(--clr-cyan);
+}
+.dark-cyan {
+  background-color: var(--clr-dcyan);
+}
+
+h2 {
+  margin-block: 1.1rem;
+  font-family: Big Shoulders Display;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 13px;
+  font-weight: 150;
+  line-height: 1.5;
+}
+
+img {
+  width: 45px;
+}
+
+button {
+  margin-top: 1rem;
+  background-color: white;
+  border: none;
+  font-size: 0.6rem;
+  padding: 0.7rem;
+  padding-inline: 30px;
+  border-radius: 50px;
+}
+
+.btn-orange {
+  color: var(--clr-ornge);
+}
+
+.btn-cyan {
+  color: var(--clr-cyan);
+}
+
+.btn-dcyan {
+  color: var(--clr-dcyan);
+}
+
+.btn-orange:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: var(--clr-ornge);
+}
+
+.btn-cyan:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: var(--clr-cyan);
+}
+
+.btn-dcyan:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: var(--clr-cyan);
+}
+
+@media all and (min-width: 1440px) {
+  .card__grid {
+    display: flex;
+    align-items: center;
+    justify-content: content;
+    max-width: 900px;
+    min-height: px;
+  }
+  article {
+    min-height: 400px;
+    max-width: 250px;
+  }
+
+  button {
+    margin-top: 6rem;
+  }
+  .wrapper {
+    max-width: fit-content;
+  }
+}
